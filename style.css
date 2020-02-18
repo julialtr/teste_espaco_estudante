@@ -1,7 +1,56 @@
-.body{
-background-color: rgb(22, 134, 97); 
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-color: white;
-text-align: center;
+body{
+background-color: white; 
 
+}
+h1{
+    color: #1E9585;
+    font-size: 29px;
+    font-weight: bold;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+.login{
+    width: 300px;
+    height: 350px;
+    border: 1px solid #9babb9;
+    border-radius: 4px;
+    margin: 80px 0 0 230px;
+    padding: 30px 60px;
+    text-align: center;
+}
+#subtitulo{
+    color: #9babb9;
+    font-size: 13px;
+}
+.inputs_login{
+    width: 250px;
+    height: 30px;
+    border: 1px #9babb9 solid;
+    border-radius: 3px;
+    display: flex;
+    color: #1E9585;
+    margin: auto;
+}
+
+.inputs_login input{ 
+    height: 28px;
+    border: none;
+    outline: none;
+    margin-left: 12px;
+    width: calc(100% - 24px);
+}
+.inputs_login i{
+    margin-left: 8px;
+    line-height: 28px;
+}
+#btn{
+    border-radius: 20px;
+    border: 1px #1E9585 solid;
+    background-color: #1E9585;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 130px;
+    height: 35px;
+    opacity: 70%;
 }

@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço do estudante</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
-<body class="body">
-    <h1>Bem vindo</h1>
-    <h3>ao Espaço do Estudante</h3>
+<body>
+<div class="login">
+    <h1> <b>Bem-Vindo</b></h1>
+    <span id="subtitulo">ao Espaço do Estudante</span><br><br>
+    <div class="inputs_login">
+        <i class="fa fa-user"></i>
+        <input type="text" placeholder="Usuário"> 
+    </div>   <br>
+    <div class="inputs_login">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Senha">
+    </div> <br>
+    <button id="btn" type="button" onclick="entrar()" ><b>Entrar</b></button>
+   
+</div>
 </body>
 </html>
