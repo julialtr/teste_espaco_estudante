@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="box">
+        <h1>Calculadora</h1>
+        <input type="number" placeholder="Primeiro número" v-model='numero1'> <br><br>
+        <input type="number" placeholder="Segundo número" v-model='numero2'><br><br>
+        <select v-model="selected">
+            <option disabled value="">Escolha uma operação</option>
+            <option value="+">Soma</option>
+            <option value="-">Subtração</option>
+            <option value="*">Multiplicação</option>
+            <option value="/">Divisão</option>
+          </select> <br><br>
+          <button v-on:click="validaCampos">Calcular</button> <br><br>                   
+          <span>{{ resultado }}</span>
+<script>
+    let box = new Vue({
+        el: '#box',
+        data: {
+            numero1: '',
+            numero2:'',
+            selected:'',
+            resultado: '',
+        }, methods:{
+
+            validaCampos: function() {
+                if (this.numero1.length > 0 && this.numero2.length > 0) {
+                    this.calcula()
+                } else {
+                    alert("Insira valores nos campos")
+                }
+            },
+            calcula: function(){
+                if (this.selected == '+') {
+                    this.resultado = "O resultado da Soma é: " + (Number(this.numero1) + Number(this.numero2));
+                }
+                else if (this.selected == '-') {
+                    this.resultado = "O resultado da Subtração é: " + (Number(this.numero1) - Number(this.numero2));
+                }
+                else if (this.selected == '*') {
+                    this.resultado = "O resultado da Multiplicação é: " + (Number(this.numero1) * Number(this.numero2));
+                }else {
+                    this.resultado ="O resultado da Divisão é: " + (Number(this.numero1) / Number(this.numero2));
+                }
+            }
+        }
+    })
+</script>
+    </div>
+</body>
+</html>

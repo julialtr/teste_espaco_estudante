@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="log">
+        <h1>Login</h1>
+        <input type="text" placeholder="Usuário" v-model='nome'> <br><br>
+        <input type="password" placeholder="Senha" v-model='senha'> <br><br>
+        <button v-on:click="salvar">Salvar</button> <br><br>
+        <span>{{logado}}</span>
+        
+    </div>
+
+    <script>
+        let log = new Vue(
+            {
+                el: "#log",
+                data:{
+                    nome:'',
+                    senha:'',
+                    logado:'',
+                }, methods:{
+                    salvar: function(){
+                        if (this.nome == 'julia' && this.senha==159) {
+                            this.logado= "Logado com sucesso"
+                        }
+                        else{
+                            this.logado= "Login inválido"
+                        }
+                    }
+                }
+            }
+        )
+    </script>
+</body>
+</html>
