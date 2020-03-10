@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+.menu-vertical{
+    margin: 0;    
+    width: 100px;
+    justify-content: center;
+}
+.menu-vertical li{
+    margin: 0;
+    list-style: none;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    background-color: black;
+    color: white;
+    
+}
+.menu-vertical li:hover {
+    background-color: wheat;
+    color: black;
+}

@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+.menu-superior{
+    margin: 0;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 30px;
+    justify-content: center;
+}
+.menu-superior li{
+    width: 120px;
+    list-style: none;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+.menu-superior li:hover{
+    background-color: #E94E1b;
+    text-decoration: underline;
+}

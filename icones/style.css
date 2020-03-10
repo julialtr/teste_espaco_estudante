@@ -1,0 +1,50 @@
+#box1{
+    width: 295px;
+    height: 40px;
+    background-color: #009584;
+    border-radius: 4px;
+    margin: 0;
+    
+}
+.escrita{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 5px;
+    margin-left: 20px;
+}
+#email{
+    margin: 1px 1px 0 1px;
+    width: 145px;
+    height: 150px;
+    background-color: #00c27c; 
+      border-top-left-radius: 3px;
+}
+#ramal{
+    margin: 1px 1px 0 1px;
+    width: 145px;
+    height: 150px;
+    background-color: #00c27c;
+    border-top-right-radius: 3px; 
+      
+}#ponto{
+    margin: 1px 1px 0 1px;
+    width: 145px;
+    height: 150px;
+    background-color: #00c27c;
+    border-bottom-left-radius: 3px; 
+      
+}#servico{
+    margin: 1px 1px 0 1px;
+    width: 145px;
+    height: 150px;
+    background-color: #00c27c; 
+    border-bottom-right-radius: 3px;
+      
+}
+#master{
+    display: flex;
+    flex-wrap: wrap; 
+    width: 300px;
+    height: 350px;
+    margin: 0;
+}
