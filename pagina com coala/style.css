@@ -45,37 +45,184 @@ margin-right: 5px;
 
 }
 #fundo-coala{
-    width: 300px;
+    width: 385px;
     height: 300px;
-    margin: 100px ;
+    margin: 100px 100px 100px 750px ;
     background-color:  rgb(37, 169, 252);
     border: rgb(3, 123, 194) 2px solid;
 }
-#cabelo{
-
+#cabelo1{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid rgb(166, 190, 207);
+    margin-top: 35px;
+    margin-left: 150px;
+    position: absolute;
 }
-#orelha{
-    height: 100px;
-    width: 100px;
+#cabelo2{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid rgb(166, 190, 207);
+    margin-top: 45px;
+    margin-left: 210px;
+    position: absolute;
+}
+#orelha-esquerda{
+    height: 150px;
+    width: 150px;
     background-color: rgb(166, 190, 207);
     border-radius: 50%;
+    left: 760px;
+    margin-top: 60px;
+    position: absolute;
 }
-#orelha-dentro{
-
+#orelha-dentro-esquerda{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #819CAF;
+    margin: 15px 15px;
+}
+#orelha-direita{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(166, 190, 207);
+    border-radius: 50%;
+    margin-top: 60px;
+    right: 235px;
+   position: absolute;
+}
+#orelha-dentro-direita{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #819CAF;
+    margin: 15px 15px;
 }
 #rosto{
     height: 230px;
     width: 230px;
     background-color: rgb(166, 190, 207);
     border-radius: 50%;
-    margin: 0px 30px;
+    margin: 0px 80px;
+    position: absolute;
+    bottom: 190px;
+    
 }
-#olho{
+#olho-esquerdo{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+#pupila-esquerdo{
+    width: 22px;
+    height: 25px;
+    background-color: #27354A;
+    border-radius: 50%;
+    margin: 30px;
+}
+#olho-direito{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+}
+#pupila-direito{
+    width: 22px;
+    height: 25px;
+    background-color: #27354A;
+    border-radius: 50%;
+    margin: 30px;
+}
 
-}
-#pupila{
-
-}
 #nariz{
+    width: 55px;
+    height: 80px;
+    background-color: #BE845F;
+    border-radius: 40%;
+position: absolute;
+bottom: 30px;
+left: 90px;
+}
 
+#principal{
+width: 500px;
+height: 300px;
+display: flex;
+flex-wrap: wrap;
+position: absolute;
+margin-top: 110px;
+margin-left: 50px;
+}
+.noticia{
+    border-top: 1px gray solid;
+    border-right: 1px gray solid;
+    border-bottom: 1px gray solid;
+    width: 130px;
+    height: 137px;
+    margin: 0;
+    margin-right: 15px;
+}
+
+#img1{
+    background-image: url(./noticia1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 137px;
+    border-top: 1px gray solid;
+    border-left: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+#img2{
+    background-image: url(./noticia2.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 137px;
+    border-top: 1px gray solid;
+    border-left: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+#img3{
+    background-image: url(./noticia3.png);    
+    background-size: 120px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 137px;
+    border-top: 1px gray solid;
+    border-left: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+#img4{
+    background-image: url(./noticia4.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 137px;
+    border-top: 1px gray solid;
+    border-left: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+.titulo{
+    color: #c11c05;
+    margin: 5px;
+    font-family: OpenSans, sans-serif;
+    font-size: 13px;
+    
+}
+.subtitulo{
+    font-family: OpenSans, sans-serif;
+    margin: 5px;
 }
